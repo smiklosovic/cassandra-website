@@ -2,12 +2,19 @@ notifications:
   commits:      commits@cassandra.apache.org
   issues:       commits@cassandra.apache.org
   pullrequests: pr@cassandra.apache.org
+  jira_options: link worklog
 
 github:
   enabled_merge_buttons:
     squash:  false
     merge:   false
     rebase:  true
+  features:
+    wiki: false
+    issues: false
+    projects: false
+  autolink_jira:
+    - CASSANDRA
 
 staging:
   profile: ~
